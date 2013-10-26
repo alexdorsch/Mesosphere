@@ -307,7 +307,7 @@
 
     Form.prototype.checkFormat = function(fieldValue, fieldName, fieldFormat) {
         var self = this;
-        var format;
+        var format = fieldFormat;
 
         if(_.isString(fieldFormat)){
             format=Formats[fieldFormat];
